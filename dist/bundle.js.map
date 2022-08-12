@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAAA,MAAM,CAACC,gBAAP,CAAwB,MAAxB,EAAgC,YAAM;EACpCC,OAAO,CAACC,GAAR,CAAY,QAAZ;AACD,CAFD,E","sources":["webpack://App Name/./src/index.js"],"sourcesContent":["window.addEventListener(\"load\", () => {\n  console.log(\"Hello!\");\n});\n"],"names":["window","addEventListener","console","log"],"sourceRoot":""}

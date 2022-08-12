@@ -1,4 +1,4 @@
-export default frag = `
+export const frag = `
     #ifdef GL_ES
     precision highp float;
     #endif
@@ -13,9 +13,9 @@ export default frag = `
     void main(void)
         {
             vec2 uv = v_texcoord;
-            uv.y = 1.0 - uv.y;
             
-            float texture_ratio = 1600.0 / 1800.0;
+            
+            float texture_ratio = 2000.0 / 1800.0;
             float canvas_ratio = u_resolution.x / u_resolution.y;
                     
             vec2 mouse = u_mouse / u_resolution;

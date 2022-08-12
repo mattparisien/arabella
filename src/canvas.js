@@ -1,4 +1,6 @@
 import GlslCanvas from "glslCanvas";
+import { frag } from "./frag";
+import image1 from "./assets/textures/image1.jpg";
 
 window.addEventListener("load", () => {
   const createCanvases = () => {
@@ -9,6 +11,8 @@ window.addEventListener("load", () => {
       const node = document.createElement("canvas");
       canvas.appendChild(node);
       const sandbox = new GlslCanvas(node);
+      sandbox.load(frag);
+      sandbox.setUniform("image", image1);
       canvases.push(sandbox);
     });
 

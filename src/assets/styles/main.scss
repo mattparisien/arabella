@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+  font-weight: lighter;
 }
 
 html {
@@ -22,8 +23,24 @@ html {
 
 h1 {
   font-size: 8rem;
-  font-weight: lighter;
   letter-spacing: -0.1rem;
+}
+
+h3 {
+  font-size: 4rem;
+  line-height: 3.4rem;
+  margin: 0;
+
+  sup {
+    font-size: 1rem;
+    display: inline;
+    vertical-align: text-top;
+  }
+}
+
+h2 {
+  font-size: 6rem;
+  line-height: 5.43rem;
 }
 
 body {
@@ -41,11 +58,12 @@ section {
     height: 100%;
 
     > div {
-      flex: 1;
+      width: 50%;
     }
 
     .text-container {
       background-color: rgb(249, 248, 240);
+      padding: 3rem;
     }
   }
 
@@ -72,5 +90,13 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.section-2 {
+  .split-layout-container .text-container {
+    p {
+      font-size: 1.8rem;
+    }
   }
 }

@@ -1,5 +1,2 @@
-# Breather App
-### Showcasing shaders
-
-####  To start the development server run the following command:
-#### 'npm run dev'
+# webpack-starter
+Webpack boilerplate setup for non-react / small-scale projects

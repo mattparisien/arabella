@@ -1,2 +1,3 @@
-# webpack-starter
-Webpack boilerplate setup for non-react / small-scale projects
+# Arabella
+Interactive web project for singer Arabella's website
+Photography distortion achieved using glsl shaders

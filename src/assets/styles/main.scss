@@ -1,2 +1,76 @@
-
 /** Base styles here **/
+
+@font-face {
+  font-family: "Karrik";
+  src: url("../fonts//Karrik.woff") format("woff");
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Karrik";
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: lighter;
+  letter-spacing: -0.1rem;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+  max-height: 1000px;
+
+  .split-layout-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    > div {
+      flex: 1;
+    }
+
+    .text-container {
+      background-color: rgb(249, 248, 240);
+    }
+  }
+
+  &:nth-child(odd) {
+    .split-layout-container > div:first-child {
+      background-color: blue;
+    }
+  }
+
+  &:nth-child(even) {
+    .split-layout-container > div:nth-child(2) {
+      background-color: blue;
+    }
+  }
+}
+
+.section-1 {
+  .split-layout-container .text-container {
+    p {
+      font-size: 1.8rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
